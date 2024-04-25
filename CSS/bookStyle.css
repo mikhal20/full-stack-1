@@ -1,0 +1,62 @@
+
+.header h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    /* the background color will be a gradient from white to blanchedalmond */
+    background: linear-gradient( white, blanchedalmond);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border: 5px solid black;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 120px;
+}
+
+.topPage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btnTop {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    z-index: 10px;
+    margin: 15px; 
+}

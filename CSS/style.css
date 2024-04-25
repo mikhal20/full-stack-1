@@ -1,0 +1,146 @@
+body {
+    color: #466995;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+    background-image: url("https://media.giphy.com/media/G8NKqvsjsHyhJpFGLn/giphy.gif");
+    background-size: cover;
+}
+
+.theTitle {
+    display: inline-block;
+    /*to change the title when the screen is too small*/
+    display: flex;
+    /*to fixe the plce of the title in the middle of the screen*/
+    position: fixed;
+    text-align: center;
+    margin-top: 12%;
+    margin-right: 35%;
+}
+
+#title {
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-size: 5em;
+}
+
+/*when the screen is too small we cant see the title*/
+@media screen and (max-width: 600px) {
+    .theTitle {
+        visibility: hidden;
+    }
+}
+/* Responsive layout - the img in the top will disapear*/
+@media screen and (max-width: 500px) {
+    .imgBoy{
+     visibility: hidden;
+   }
+}
+.header {
+    /*set the style of the navbar*/
+    background-color: #466995;
+    border: 10px solid #466995;
+
+    /*fixe the position*/
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+    margin-top: 0px;
+
+    /*turn the navbar to flex and center the content*/
+    display: flex;
+    justify-content: center;
+}
+
+.header li {
+    color: #FFF;
+    width: 80px;
+    flex: 1;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #466995;
+    border: 10px solid #466995;
+    height: 100%;
+}
+
+.tbl {
+    padding-top: 50px;
+    height: 100vh;
+    display: inline-block;
+    right: 0px;
+    margin-top: 20px;
+}
+
+td ,tr{
+    color: black;
+    border: 1px solid #dddddd;
+    text-align: right;
+    font-size: larger;
+    padding: 8px;
+
+}
+
+/*to change the color of the item when the cursor is on it*/
+li:hover {
+    color: #a0ccdc;
+    cursor:pointer;
+}
+
+/*to change the color of the item when the cursor is on it*/
+td:hover {
+    color: #DBE9EE;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contactBody, .compteBody, .bodyAbout {
+    margin-top: 150px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 120px;
+}
+
+
+form {
+    text-align: center;
+}
+
+input {
+   background-color: white;
+   color: #466995;
+   border: 1px solid #466995;
+   margin: 10px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: large;
+}
+
+.imgBoy {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.divImgBoy {
+    position: fixed;
+    left: 2px;
+    top: 3px;
+    z-index: 50;
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition fluide */
+}
+
+/*the change the size of the item when the cursor is on it*/
+.divImgBoy:hover {
+    transform: scale(1.2); /* Agrandit l'élément au survol */
+}
